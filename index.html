@@ -661,8 +661,8 @@
       }
 
       #overview h1 {
-        max-width: 1060px;
-        font-size: clamp(92px, 8vw, 140px);
+        max-width: 1000px;
+        font-size: clamp(82px, 7vw, 126px);
       }
 
       #overview .lead {
@@ -1520,6 +1520,314 @@
         }
       }
 
+      @media (min-width: 1181px) and (max-width: 1400px) {
+        :root {
+          --header-h: 86px;
+          --page-x: clamp(54px, 6vw, 86px);
+        }
+
+        .site-header {
+          top: 16px;
+          width: calc(100vw - 48px);
+          height: 86px;
+          grid-template-columns: auto minmax(0, 1fr);
+          gap: 20px;
+          padding: 8px 12px;
+        }
+
+        .brand {
+          min-width: 286px;
+          gap: 12px;
+        }
+
+        .brand-mark,
+        .brand-logo {
+          width: 64px;
+          height: 64px;
+          border-radius: 20px;
+        }
+
+        .brand-name {
+          font-size: 18px;
+        }
+
+        .brand-tag {
+          font-size: 10.5px;
+          letter-spacing: 0.08em;
+        }
+
+        .nav {
+          justify-self: end;
+          max-width: 100%;
+          min-height: 50px;
+          padding: 5px;
+          overflow: hidden;
+        }
+
+        .nav a {
+          height: 40px;
+          min-width: 86px;
+          padding: 0 13px;
+          font-size: 14px;
+        }
+
+        .header-cta {
+          display: none;
+        }
+
+        .chapter {
+          min-height: max(100svh, 760px);
+          padding: calc(var(--header-h) + 36px) var(--page-x) 38px;
+        }
+
+        .wide {
+          grid-template-columns: minmax(400px, 0.7fr) minmax(560px, 1fr);
+          gap: clamp(28px, 3.2vw, 42px);
+        }
+
+        .copy,
+        #proof .copy {
+          max-width: 560px;
+        }
+
+        h1,
+        h2 {
+          font-size: clamp(58px, 5vw, 78px);
+        }
+
+        .wide h2,
+        .long-title,
+        #industrial .long-title,
+        #proof h2 {
+          font-size: clamp(54px, 4.7vw, 68px);
+        }
+
+        .lead,
+        #proof .lead {
+          font-size: clamp(20px, 1.5vw, 23px);
+          line-height: 1.42;
+        }
+
+        #overview {
+          min-height: max(100svh, 820px);
+        }
+
+        #overview .chapter-inner {
+          width: min(1220px, 100%);
+          transform: translateY(clamp(-98px, -10vh, -72px));
+        }
+
+        #overview .copy {
+          max-width: min(820px, 66vw);
+          transform: translate3d(-12px, 34px, 0);
+        }
+
+        #overview.is-visible .copy {
+          transform: translate3d(-12px, 0, 0);
+        }
+
+        #overview h1 {
+          max-width: 860px;
+          font-size: clamp(78px, 6.9vw, 104px);
+          line-height: 0.98;
+        }
+
+        #overview .lead {
+          max-width: min(560px, 44vw);
+          margin-top: 18px;
+          font-size: clamp(19px, 1.35vw, 21px);
+          line-height: 1.36;
+        }
+
+        .hero-strip {
+          left: var(--page-x);
+          right: var(--page-x);
+          bottom: 38px;
+          gap: 20px;
+        }
+
+        .hero-strip a {
+          min-height: clamp(204px, 22vh, 238px);
+          padding: 28px;
+          border-radius: 18px;
+        }
+
+        .hero-strip b {
+          font-size: clamp(30px, 2.3vw, 38px);
+        }
+
+        .hero-strip p {
+          font-size: 14px;
+          line-height: 1.38;
+        }
+
+        .callout-board,
+        .route-line,
+        .system-map,
+        .proof-ledger {
+          min-height: 560px;
+          padding: 26px;
+          border-radius: 24px;
+        }
+
+        .callout-board::before,
+        .route-line::before,
+        .system-map::before {
+          inset: 18px;
+          border-radius: 20px;
+        }
+
+        .callout-stack,
+        .route-items,
+        .map-points {
+          min-height: 508px;
+          gap: 14px;
+        }
+
+        .callout,
+        .route-item,
+        .map-point {
+          min-height: 247px;
+          padding: 24px;
+          border-radius: 20px;
+        }
+
+        .node {
+          width: 38px;
+          height: 38px;
+          font-size: 15px;
+        }
+
+        .callout b,
+        .route-item b,
+        .map-point strong {
+          font-size: clamp(30px, 2.35vw, 36px);
+        }
+
+        .callout span:not(.node),
+        .route-item span,
+        .map-point span {
+          font-size: 16px;
+          line-height: 1.38;
+        }
+
+        .route-item i {
+          margin-bottom: 18px;
+          font-size: 30px;
+        }
+
+        .map-point b {
+          margin-bottom: 18px;
+        }
+
+        .proof-ledger {
+          padding: 22px;
+        }
+
+        .reference-grid {
+          gap: 14px;
+        }
+
+        .reference-card {
+          min-height: 142px;
+          padding: 18px;
+          border-radius: 18px;
+        }
+
+        .reference-card strong {
+          font-size: 25px;
+        }
+
+        .reference-card p {
+          font-size: 13px;
+          line-height: 1.32;
+        }
+
+        #contact .chapter-inner {
+          width: min(1260px, 100%);
+        }
+
+        #contact .split {
+          grid-template-columns: minmax(360px, 0.52fr) minmax(680px, 1.48fr);
+          gap: clamp(24px, 3vw, 34px);
+        }
+
+        #contact h2 {
+          max-width: 420px;
+          font-size: clamp(66px, 5.6vw, 82px);
+        }
+
+        #contact .lead {
+          font-size: clamp(20px, 1.5vw, 23px);
+        }
+
+        #contact .contact-board {
+          min-height: 540px;
+          gap: 30px;
+          padding: 32px 36px;
+          border-radius: 26px;
+        }
+
+        #contact .request-box h3 {
+          font-size: 44px;
+        }
+
+        #contact .request-box p {
+          font-size: 17px;
+          line-height: 1.42;
+        }
+
+        #contact .request-list {
+          margin-top: 22px;
+        }
+
+        #contact .request-list div {
+          grid-template-columns: 48px 1fr;
+          min-height: 64px;
+          padding: 11px 0;
+          font-size: 17px;
+        }
+
+        #contact .request-list i {
+          width: 36px;
+          height: 36px;
+        }
+
+        #contact .contact-box h3 {
+          font-size: 42px;
+        }
+
+        #contact .contact-box p {
+          font-size: 16px;
+          line-height: 1.42;
+        }
+
+        #contact .contact-placeholders {
+          gap: 10px;
+          margin: 20px 0;
+        }
+
+        #contact .contact-placeholders div {
+          padding: 13px 16px;
+          border-radius: 14px;
+        }
+
+        #contact .contact-placeholders strong {
+          font-size: 15px;
+        }
+
+        #contact .contact-box .button.primary {
+          min-height: 50px;
+          font-size: 14px;
+        }
+
+        #contact .contact-box .note {
+          margin-top: 14px;
+          font-size: 12px;
+          line-height: 1.4;
+        }
+      }
+
       @media (max-width: 1180px) {
         :root {
           --page-x: 42px;
@@ -1596,7 +1904,7 @@
 
       @media (max-width: 640px) {
         :root {
-          --header-h: 150px;
+          --header-h: 174px;
           --page-x: clamp(18px, 5vw, 24px);
           --mobile-content-w: calc(100vw - var(--page-x) - var(--page-x) - 16px);
         }
