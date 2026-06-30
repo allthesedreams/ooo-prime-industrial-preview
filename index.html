@@ -2144,6 +2144,7 @@
         .split,
         .wide,
         .contact-board,
+        .callout-stack,
         .route-items,
         .map-points,
         .reference-grid {
@@ -2326,6 +2327,9 @@
         .contact-board,
         .request-box,
         .contact-box {
+          width: 100%;
+          max-width: 100%;
+          min-width: 0;
           min-height: 0;
           padding: 18px;
           border-radius: 22px;
@@ -2346,12 +2350,15 @@
         .reference-grid,
         .request-list,
         .contact-placeholders {
+          width: 100%;
+          min-width: 0;
           gap: 12px;
         }
 
         .callout {
           grid-template-columns: 42px 1fr;
           gap: 12px;
+          min-width: 0;
           min-height: 150px;
           padding: 18px;
           border: 1px solid rgba(151, 221, 255, 0.14);
@@ -2382,6 +2389,7 @@
 
         .route-item,
         .map-point {
+          min-width: 0;
           min-height: 168px;
           padding: 22px;
           border-radius: 18px;
@@ -2411,6 +2419,7 @@
         }
 
         .reference-card {
+          min-width: 0;
           min-height: 150px;
           padding: 18px;
           border-radius: 18px;
